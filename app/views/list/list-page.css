@@ -1,0 +1,40 @@
+.add-bar {
+  background-color: #CB1D00;
+  padding: 5;
+  padding-bottom: 0;
+}
+.add-bar Image {
+  height: 15;
+  vertical-align: center;
+  margin-left: 10;
+  margin-right: 10;
+}
+.add-bar TextField {
+  padding: 10;
+  background: transparent;
+}
+Label {
+  background-color: white;
+  border-bottom-width: 1;
+  border-bottom-color: gray;
+}
+.delete-view {
+  background-color: #CB1D00;
+  padding: 20;
+    width: 50;
+}
+.delete-view Image {
+  color: white;
+}
+ListView {
+  opacity: 0;
+}
+.visible {
+  animation-name: show;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

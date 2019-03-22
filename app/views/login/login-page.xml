@@ -1,0 +1,21 @@
+<Page loaded="loaded">
+    <FlexboxLayout>
+        <StackLayout id="form" class="{{ isLoggingIn ? 'form' : 'form dark' }}"
+            orientation="vertical">
+            <Image src="~/images/logo.png" />
+            <TextField id="email" text="{{ email }}" hint="Email Address"
+                keyboardType="email" autocorrect="false"
+                autocapitalizationType="none" class="input input-border" />
+            <TextField hint="Password" text="{{ password }}" secure="true"
+                class="input input-border" />
+
+            <Button text="{{ isLoggingIn ? 'Sign In' : 'Sign Up' }}" class="btn btn-primary"
+                tap="submit" />
+            <Button text="{{ isLoggingIn ? 'Sign Up' : 'Back to login' }}"
+                class="link" tap="toggleDisplay" />
+            <ActivityIndicator busy="{{ isSigningIn }}" row="1"
+                horizontalAlignment="center" verticalAlignment="center" />
+        </StackLayout>
+    </FlexboxLayout>
+
+</Page>
